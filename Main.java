@@ -27,7 +27,7 @@ public class Main {
             jogo.play(); // inicia o game
 
             while (continuarJogando) {
-                System.out.println("Deseja continuar jogando? (S/N)");
+                System.out.println("Deseja continuar? (S/N)");
                 String resposta = scanner.next();
                 continuarJogando = resposta.equalsIgnoreCase("S");
 
@@ -35,7 +35,7 @@ public class Main {
                 if (continuarJogando) {
                     jogo.play();
                 } else {
-                    System.out.println("\n--- Resultado do Jogo ---\n");
+                    System.out.println("\nResultado do Jogo\n");
 
                     // percorre todos os resultados do jogo
                     for (GameResult result : jogo.getGameHistory()) {
